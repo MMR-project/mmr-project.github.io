@@ -5,8 +5,8 @@ window.addEventListener("load", function(){
 
 	var createInstallAction = function(manifest, name){
 		return function(event){
-			event.preventDeafult();
-			if(manifest){
+			event.preventDefault();
+			if(manifest !== null){
 				var response = navigator.mozApps.install(manifest);
 				response.onsuccess = function(data){
 					alert("インストールできました:" + (name || manifest));
