@@ -1,20 +1,38 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <title>brest</title>
+    <title>MMR Project</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
   </head>
   <body>
-    <section>
-      <head>
-        <h1>brest</h1>
-      </head>
-      <ul>
-        <li><a href="/brest/UI/index.html">起動</a></li>
-        <li><a href="https://github.com/MMR-project/brest/raw/master/manifest.webapp" class="install">インストール</a></li>
-      </ul>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">MMR Project</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://github.com/mmr-project">github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="jumbotron">
+        <h1>会議採点</h1>
+        <p>ブレインストーミングの生産性を可視化します。</p>
+        <p>このシステムの利用には Firefox が必要です。また Web カメラとマイクへのアクセスを許可する必要があります。</p>
+        <p class="control">
+          <a class="btn btn-primary" href="/analmeeting/index.html">起動</a>
+          <a class="btn btn-primary install-app" href="https://github.com/MMR-project/analmeeting/raw/master/manifest.webapp" data-app-name="ブレインズトーミング採点システム">インストール</a>
+      </div>
     </section>
-    <script src="js/install.js"></script>
+
+    <script src="/js/install.js"></script>
   </body>
 </html>
 
