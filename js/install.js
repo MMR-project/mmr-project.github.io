@@ -9,14 +9,29 @@ window.addEventListener("load", function(){
 		MANIFEST_URL_ERROR: "マニフェストを取得できなかったため",		
 		NETWORK_ERROR: "マニフェストを取得できなかったため",
 		MANIFEST_PARSE_ERROR: "マニフェストを処理できなかったため",
-		UNKNOWN: "不明なエラーのため"
+		UNKNOWN: "アプリケーションが既にインストールされているため"
 	};
 
 	var translateError = function(error){
 		return ERROR_MESSAGE[error.name] || ERROR_MESSAGE.UNKNOWN;
 	};
 
+	var expandURL = function(url){
+		if(url.startsWith("http")){
+			return url;
+		}
+		if(url[0] == "/"){
+			return window.location.protocol + "//" +
+				window.location.host + url;
+		}else{
+			return window.location.toString().replace(/\/[^\/]*$/, "") +
+				"/" + url;
+		}
+		return url;
+	};
+
 	var createInstallAction = function(manifest, name){
+		manifest = expandURL(manifest);
 		return function(event){
 			event.preventDefault();
 			if(manifest !== null){

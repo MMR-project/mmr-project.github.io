@@ -1,0 +1,19 @@
+{
+	"name": "analmeeting",
+	"description": "ブレインストーミングや会議の生産性を、さまざまな方面から採点、可視化します。",
+    "package_path" : "/apps/analmeeting/analmeeting.zip",
+	"version": "0.1",
+	"icons": {
+		"30": "/apps/analmeeting/icon/icon-30.png",
+		"32": "/apps/analmeeting/icon/icon-32.png",
+		"60": "/apps/analmeeting/icon/icon-60.png",
+		"64": "/apps/analmeeting/icon/icon-64.png",
+		"90": "/apps/analmeeting/icon/icon-90.png",
+		"120": "/apps/analmeeting/icon/icon-120.png",
+		"128": "/apps/analmeeting/icon/icon-128.png"
+	},
+	"developer": {
+		"name": "MMR-Project",
+		"url": "https://github.com/MMR-project/"
+	}
+}
