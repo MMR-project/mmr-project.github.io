@@ -1,0 +1,21 @@
+{
+	"name": "会議採点",
+	"description": "ブレインストーミングや会議の生産性を、さまざまな方面から採点、可視化します。",
+	"launch_path": "/analmeeting/index.html",
+	"icons": {
+		"30": "/analmeeting/images/icon/icon-30.png",
+		"32": "/analmeeting/images/icon/icon-32.png",
+		"60": "/analmeeting/images/icon/icon-60.png",
+		"64": "/analmeeting/images/icon/icon-64.png",
+		"90": "/analmeeting/images/icon/icon-90.png",
+		"120": "/analmeeting/images/icon/icon-120.png",
+		"128": "/analmeeting/images/icon/icon-128.png"
+	},
+	"version": "0.1",
+	"developer": {
+		"name": "MMR-Project",
+		"url": "https://github.com/MMR-project/"
+	},
+	"default_locale": "ja",
+	"fullscreen": "true"
+}
